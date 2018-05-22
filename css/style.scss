@@ -78,7 +78,7 @@ header p{
   font-size: 20px;
   color: #333b46;
   margin-bottom: 50px;
-  letter-spacing: 3px;
+
 }
 .col-md-6 p{
   font-family: 'Open Sans', sans-serif;
@@ -125,7 +125,7 @@ header p{
   color: white;
   background-color: #81868e;
   border-radius: 50%;
-  font-size: 15px;
+  //font-size: 15px;
   height: 55px;
   width: 55px;
   text-align: center;
@@ -183,7 +183,7 @@ text-align: left;
     .hov{
       height: 319px;
       position: relative;
-      padding: 0px;
+      padding: 0;
       &:after{
         content: "";
         display: block;
@@ -212,6 +212,8 @@ text-align: left;
       background-size: cover;
       &:after{
         content: "+";
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 20px;
       }
     }
     .two{
@@ -221,6 +223,9 @@ text-align: left;
       background-size: cover;
       &:after{
         content: "VINTAGE";
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 20px;
+        letter-spacing: 3px;
       }
     }
     .three{
@@ -230,7 +235,39 @@ text-align: left;
       background-size: cover;
       &:after{
         content: "Branding";
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 20px;
+        letter-spacing: 3px;
 
       }
     }
+  }
+  .five{
+    background-image: url("../images/green-line.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    p{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      padding-top: 45px;
+      padding-bottom: 45px;
+      color: #fff;
+    }
+    .col-md-3{
+      padding: 50px;
+    }
+    a{
+      border: 1px solid white;
+      padding: 12px 24px;
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+    }
+  }
+  .container-fluid{
+  padding: 0;
   }

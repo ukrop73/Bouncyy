@@ -1,10 +1,15 @@
 header {
   background-image: url("../images/bg_header.png");
   background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
   padding-bottom: 76px;
   width: 100%;
+  margin: auto;
+  background-position: center;
   position: relative;
-  min-height: 740px; }
+  min-height: 740px;
+  height: 100%; }
 
 .navbar-toggle .icon-bar {
   background-color: #000; }
@@ -70,8 +75,7 @@ header p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
   color: #333b46;
-  margin-bottom: 50px;
-  letter-spacing: 3px; }
+  margin-bottom: 50px; }
 
 .col-md-6 p {
   font-family: 'Open Sans', sans-serif;
@@ -98,7 +102,7 @@ header p {
 .second {
   background-color: #f3f3f3; }
 
-.second h2 {
+.second h2:first-child {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
   color: #333b46;
@@ -111,6 +115,138 @@ header p {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   color: #81868e;
+  text-align: center;
+  margin-bottom: 60px; }
+
+.icon-bar div a i {
+  color: white;
+  background-color: #81868e;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 28px;
+  margin: auto; }
+
+.icon-bar div a i:hover {
+  background-color: #19bd9a; }
+
+.icon-bar div {
+  display: inline-block;
+  margin-right: 27px; }
+
+.icon-bar {
   text-align: center; }
+
+.second .col-md-3 h2 {
+  text-align: left;
+  padding-top: 40px; }
+
+.second .col-md-3 p {
+  text-align: left; }
+
+.second .col-md-3 p span:first-child {
+  color: #19bd9a; }
+
+.second .col-md-7 p strong:nth-child(4) {
+  color: #19bd9a; }
+
+.second .col-md-7 p {
+  text-align: left;
+  padding-top: 117px;
+  padding-bottom: 60px; }
+
+.third h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  color: #333b46;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 28px; }
+
+.third p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #81868e;
+  text-align: center;
+  margin-bottom: 65px; }
+
+.four .hov {
+  height: 319px;
+  position: relative;
+  padding: 0; }
+  .four .hov:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    color: #FFF;
+    text-align: center;
+    padding-top: 150px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: lighter;
+    opacity: 0.8; }
+  .four .hov:hover:after {
+    display: none; }
+.four .first {
+  background-image: url("../images/section-four-pic1.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover; }
+  .four .first:after {
+    content: "+";
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px; }
+.four .two {
+  background-image: url("../images/section-four-pic2.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover; }
+  .four .two:after {
+    content: "VINTAGE";
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px; }
+.four .three {
+  background-image: url("../images/section-four-pic3.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover; }
+  .four .three:after {
+    content: "Branding";
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px; }
+
+.five {
+  background-image: url("../images/green-line.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover; }
+  .five p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    color: #fff; }
+  .five .col-md-3 {
+    padding: 50px; }
+  .five a {
+    border: 1px solid white;
+    padding: 12px 24px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px; }
+
+.container-fluid {
+  padding: 0; }
 
 /*# sourceMappingURL=style.css.map */
