@@ -3,6 +3,8 @@ header{
   background-repeat: no-repeat;
   padding-bottom: 76px;
   width: 100%;
+  margin: auto;
+  background-position: center;
   position: relative;
   min-height: 740px;
 
@@ -101,7 +103,7 @@ header p{
 .second{
   background-color: #f3f3f3;
 }
-.second h2{
+.second h2:first-child{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
   color: #333b46;
@@ -115,7 +117,63 @@ header p{
   font-size: 14px;
   color: #81868e;
   text-align: center;
+  margin-bottom: 60px;
+}
+.icon-bar div a i {
+  color: white;
+  background-color: #81868e;
+  border-radius: 50%;
+  font-size: 15px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 28px;
+  margin: auto;
+}
+.icon-bar div a i:hover{
+  background-color: #19bd9a;
 }
 
+.icon-bar div{
+  display: inline-block;
+  margin-right: 27px;
+  }
+.icon-bar{
+  text-align: center;
+}
+.second .col-md-3 h2{
+text-align: left;
+  padding-top: 40px;
+}
+.second .col-md-3 p{
+  text-align: left;
+}
+.second .col-md-3 p span:first-child{
+  color: #19bd9a;
+}
+.second .col-md-7 p strong:nth-child(4){
+  color: #19bd9a;
+}
+.second .col-md-7 p{
+  text-align: left;
+  padding-top: 117px;
+  padding-bottom: 60px;
+}
+.third h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  color: #333b46;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 28px;
+}
+.third p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #81868e;
+  text-align: center;
+  margin-bottom: 65px;
 
-
+}
