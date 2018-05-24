@@ -219,9 +219,10 @@ p {
     font-size: 20px;
     padding-top: 45px;
     padding-bottom: 45px;
-    color: #fff; }
+    color: #fff;
+    margin: 0; }
   .five .col-md-3 {
-    padding: 50px; }
+    padding-top: 50px; }
     .five .col-md-3 a {
       border: 1px solid white;
       padding: 12px 24px;
@@ -237,14 +238,14 @@ p {
   .six h2 {
     margin: 0;
     padding-top: 81px;
-    padding-bottom: 42px;
+    margin-bottom: 42px;
     text-align: center;
     letter-spacing: 3px; }
   .six p {
     margin: 0;
     text-align: center; }
   .six .col-md-1 {
-    padding-top: 61px; }
+    margin-top: 61px; }
   .six .col-md-5 h2 {
     text-align: left;
     padding-bottom: 35px;
