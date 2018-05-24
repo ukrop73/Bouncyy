@@ -329,12 +329,11 @@ p {
   .col-md-6{
     padding-top: 115px;
     padding-bottom: 182px;
-  }
-  col-md-4 p{
-    padding-top: 24px;
+    .col-md-4 p{
+      padding-top: 24px;
+    }
   }
 }
-
 .six {
     a i {
       color: white;
@@ -505,4 +504,50 @@ p {
 //}
 ////////////////////////////END Section-6///////////////////////////////////
 ////////////////////////////BEGIN Section-7/////////////////////////////////
-
+.seven{
+  background-image: url("../images/section6-bg.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  img{
+    margin-top: -38px;
+  }
+  h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #f3f3f3;
+    text-transform: uppercase;
+    padding-top: 80px;
+    margin: 0;
+  }
+  .col-md-6{
+    p:nth-child(2){
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      color: #abacac;
+      padding-top: 60px;
+      margin: 0;
+    }
+    p:nth-child(3){
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      color: #abacac;
+      text-transform: uppercase;
+      padding-top: 32px;
+      font-weight: bold;
+      margin: 0;
+    }
+    p:nth-child(4){
+      padding-bottom: 100px;
+      color: #b2b3b3;
+    }
+    p span{
+      color: #19bd9a;
+      padding-bottom: 100px;
+    }
+  }
+}
+////////////////////////////END Section-7///////////////////////////////////
+////////////////////////////BEGIN Section-8/////////////////////////////////
