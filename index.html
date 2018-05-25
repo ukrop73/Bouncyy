@@ -18,6 +18,12 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="js/modernizr.custom.70736.js"></script>
     <noscript><link rel="stylesheet"  href="css/noJS.css"/></noscript>
+    <script type="text/javascript">
+        function myShowImage(liId) {
+            document.getElementById(liId).click();
+            return false;
+        }
+    </script>
 </head>
 <body>
 <header class="top">
@@ -228,13 +234,13 @@
         <h2>THE PORTFOLIO</h2>
         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
         <ul class="menu">
-            <li><a href="#">All Works</a></li>
-            <li><a href="#">Print</a></li>
-            <li><a href="#">Identity</a></li>
-            <li><a href="#">Branding</a></li>
-            <li><a href="#">Web</a></li>
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">Wordpress</a></li>
+            <li><a href="javascript:myShowImage('liAll')">All Works</a></li>
+            <li><a href="javascript:myShowImage('liPrint')" id="aPrint">Print</a></li>
+            <li><a href="javascript:myShowImage('liIdentity')">Identity</a></li>
+            <li><a href="javascript:myShowImage('liBranding')">Branding</a></li>
+            <li><a href="javascript:myShowImage('liWeb)">Web</a></li>
+            <li><a href="javascript:myShowImage('liHTML')">HTML</a></li>
+            <li><a href="javascript:myShowImage('liWordpress')">Wordpress</a></li>
 
         </ul>
         <!---------------------------BEGIN GALLERY--------------------------->
@@ -261,8 +267,8 @@
             <!--</div>-->
             <div class="gamma-container gamma-loading" id="gamma-container">
                 <ul class="gamma-gallery">
-                    <li>
-                        <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+                    <li id="liAll">
+                        <div data-alt="img03" data-description="<h3>All Works</h3>" data-max-width="1800" data-max-height="1350">
                             <div data-src="images/xxxlarge/gallary1.png" data-min-width="1300"></div>
                             <div data-src="images/xxlarge/gallary1.png" data-min-width="1000"></div>
                             <div data-src="images/xlarge/gallary1.png" data-min-width="700"></div>
@@ -275,8 +281,8 @@
                             </noscript>
                         </div>
                     </li>
-                    <li>
-                        <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+                    <li id="liPrint">
+                        <div data-alt="img03" data-description="<h3>Print</h3>" data-max-width="1800" data-max-height="1350">
                             <div data-src="images/xxxlarge/gallary2.png" data-min-width="1300"></div>
                             <div data-src="images/xxlarge/gallary2.png" data-min-width="1000"></div>
                             <div data-src="images/xlarge/gallary2.png" data-min-width="700"></div>
@@ -289,8 +295,8 @@
                             </noscript>
                         </div>
                     </li>
-                    <li>
-                        <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+                    <li id="liIdentity">
+                        <div data-alt="img03" data-description="<h3>Identity</h3>" data-max-width="1800" data-max-height="1350">
                             <div data-src="images/xxxlarge/gallary3.png" data-min-width="1300"></div>
                             <div data-src="images/xxlarge/gallary3.png" data-min-width="1000"></div>
                             <div data-src="images/xlarge/gallary3.png" data-min-width="700"></div>
@@ -303,8 +309,8 @@
                             </noscript>
                         </div>
                     </li>
-                    <li>
-                        <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+                    <li id="liBranding">
+                        <div data-alt="img03" data-description="<h3>Branding</h3>" data-max-width="1800" data-max-height="1350">
                             <div data-src="images/xxxlarge/gallary4.png" data-min-width="1300"></div>
                             <div data-src="images/xxlarge/gallary4.png" data-min-width="1000"></div>
                             <div data-src="images/xlarge/gallary4.png" data-min-width="700"></div>
@@ -317,8 +323,8 @@
                             </noscript>
                         </div>
                     </li>
-                    <li>
-                        <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+                    <li id="liWeb">
+                        <div data-alt="img03" data-description="<h3>Web</h3>" data-max-width="1800" data-max-height="1350">
                             <div data-src="images/xxxlarge/gallary6.png" data-min-width="1300"></div>
                             <div data-src="images/xxlarge/gallary6.png" data-min-width="1000"></div>
                             <div data-src="images/xlarge/gallary6.png" data-min-width="700"></div>
@@ -331,8 +337,8 @@
                             </noscript>
                         </div>
                     </li>
-                    <li>
-                        <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+                    <li id="liHTML">
+                        <div data-alt="img03" data-description="<h3>HTML</h3>" data-max-width="1800" data-max-height="1350">
                             <div data-src="images/xxxlarge/gallary7.png" data-min-width="1300"></div>
                             <div data-src="images/xxlarge/gallary7.png" data-min-width="1000"></div>
                             <div data-src="images/xlarge/gallary7.png" data-min-width="700"></div>
@@ -345,8 +351,8 @@
                             </noscript>
                         </div>
                     </li>
-                    <li>
-                        <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+                    <li id="liWordpress">
+                        <div data-alt="img03" data-description="<h3>Wordpress</h3>" data-max-width="1800" data-max-height="1350">
                             <div data-src="images/xxxlarge/gallary5.png" data-min-width="1300"></div>
                             <div data-src="images/xxlarge/gallary5.png" data-min-width="1000"></div>
                             <div data-src="images/xlarge/gallary5.png" data-min-width="700"></div>
