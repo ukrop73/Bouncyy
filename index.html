@@ -18,12 +18,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="js/modernizr.custom.70736.js"></script>
     <noscript><link rel="stylesheet"  href="css/noJS.css"/></noscript>
-    <script type="text/javascript">
-        function myShowImage(liId) {
-            document.getElementById(liId).click();
-            return false;
-        }
-    </script>
 </head>
 <body>
 <header class="top">
@@ -241,7 +235,6 @@
             <li><a href="javascript:myShowImage('liWeb)">Web</a></li>
             <li><a href="javascript:myShowImage('liHTML')">HTML</a></li>
             <li><a href="javascript:myShowImage('liWordpress')">Wordpress</a></li>
-
         </ul>
         <!---------------------------BEGIN GALLERY--------------------------->
          <!--Codrops top bar-->
@@ -266,7 +259,7 @@
                 <!--</div>-->
             <!--</div>-->
             <div class="gamma-container gamma-loading" id="gamma-container">
-                <ul class="gamma-gallery">
+                <ul class="gamma-gallery" id="gamma-gallery">
                     <li id="liAll">
                         <div data-alt="imgAllWorks" data-description="<h3>All Works</h3>" data-max-width="1800" data-max-height="1350">
                             <div data-src="images/xxxlarge/gallary1.png" data-min-width="1300"></div>
@@ -407,34 +400,6 @@
                             </noscript>
                         </div>
                     </li>
-                    <li>
-                        <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
-                            <div data-src="images/xxxlarge/gallary11.png" data-min-width="1300"></div>
-                            <div data-src="images/xxlarge/gallary11.png" data-min-width="1000"></div>
-                            <div data-src="images/xlarge/gallary11.png" data-min-width="700"></div>
-                            <div data-src="images/large/gallary11.png" data-min-width="300"></div>
-                            <div data-src="images/medium/gallary11.png" data-min-width="200"></div>
-                            <div data-src="images/small/gallary11.png" data-min-width="140"></div>
-                            <div data-src="images/xsmall/gallary11.png"></div>
-                            <noscript>
-                                <img src="images/xsmall/gallary11.png" alt="img03"/>
-                            </noscript>
-                        </div>
-                    </li>
-                    <li>
-                        <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
-                            <div data-src="images/xxxlarge/gallary9.png" data-min-width="1300"></div>
-                            <div data-src="images/xxlarge/gallary9.png" data-min-width="1000"></div>
-                            <div data-src="images/xlarge/gallary9.png" data-min-width="700"></div>
-                            <div data-src="images/large/gallary9.png" data-min-width="300"></div>
-                            <div data-src="images/medium/gallary9.png" data-min-width="200"></div>
-                            <div data-src="images/small/gallary9.png" data-min-width="140"></div>
-                            <div data-src="images/xsmall/gallary9.png"></div>
-                            <noscript>
-                                <img src="images/xsmall/gallary9.png" alt="img03"/>
-                            </noscript>
-                        </div>
-                    </li>
                 </ul>
                 <div class="gamma-overlay"></div>
                 <!--<div id="loadmore" class="loadmore">Example for loading more items...</div>-->
@@ -448,6 +413,51 @@
     <script src="js/jquerypp.custom.js"></script>
     <script src="js/gamma.js"></script>
     <script type="text/javascript">
+        
+        function myShowImage(liId) {
+            
+            var content = '';
+            
+            switch(liId) {
+                case 'liPrint':
+                    content = '<li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/gallary11.png" data-min-width="1300"></div><div data-src="images/xxlarge/gallary11.png" data-min-width="1000"></div><div data-src="images/xlarge/gallary11.png" data-min-width="700"></div><div data-src="images/large/gallary11.png" data-min-width="300"></div><div data-src="images/medium/gallary11.png" data-min-width="200"></div><div data-src="images/small/gallary11.png" data-min-width="140"></div><div data-src="images/xsmall/gallary11.png"></div><noscript><img src="images/xsmall/gallary11.png" alt="img03"/></noscript></div></li>';
+                    break;
+                
+                case 'liIdentity':
+                    content = '<li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/gallary9.png" data-min-width="1300"></div><div data-src="images/xxlarge/gallary9.png" data-min-width="1000"></div><div data-src="images/xlarge/gallary9.png" data-min-width="700"></div><div data-src="images/large/gallary9.png" data-min-width="300"></div><div data-src="images/medium/gallary9.png" data-min-width="200"></div><div data-src="images/small/gallary9.png" data-min-width="140"></div><div data-src="images/xsmall/gallary9.png"></div><noscript><img src="images/xsmall/gallary9.png" alt="img03"/></noscript></div></li>';
+                    break;
+                
+                default:
+                    break;
+            }
+            
+            //alert(content);
+            //document.getElementById(liId).click();
+            document.getElementById("gamma-gallery").innerHTML = content;
+            
+            var GammaSettings = {
+                // order is important!
+                viewport : [ {
+                            width : 1200,
+                            columns : 5
+                            }, {
+                            width : 900,
+                            columns : 4
+                            }, {
+                            width : 500,
+                            columns : 3
+                            }, {
+                            width : 320,
+                            columns : 2
+                            }, {
+                            width : 0,
+                            columns : 2
+                            } ]
+            };
+            Gamma.init(GammaSettings);
+            
+            return false;
+        }
 
         $(function() {
             var GammaSettings = {
